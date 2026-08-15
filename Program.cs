@@ -8,10 +8,8 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 
 var app = builder.Build();
-app.MapGet("/yodgorbeksheraliyev____gmail_com", (string? x, string? y) =>
+app.MapGet("/yodgorbekengineer_gmail_com", (string? x, string? y) =>
 {
-    x = x.Substring(1, x.Length - 2);
-    y = y.Substring(1, y.Length - 2);
     if (!IsValidNumber(x) || !IsValidNumber(y))
         return "NaN";
     BigInteger a = BigInteger.Parse(x!);
