@@ -8,7 +8,7 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 
 var app = builder.Build();
-app.MapGet("/yodgorbekengineer_gmail_com", (string? x, string? y) =>
+app.MapGet("/yodgorbeksheraliyev777_gmail_com", (string? x, string? y) =>
 {
     if (!IsValidNumber(x) || !IsValidNumber(y))
         return "NaN";
