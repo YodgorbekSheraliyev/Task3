@@ -2,11 +2,6 @@ using System.Numerics;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-
-builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
-
 var app = builder.Build();
 app.MapGet("/yodgorbeksheraliyev777_gmail_com", (string? x, string? y) =>
 {
@@ -22,6 +17,7 @@ app.MapGet("/yodgorbeksheraliyev777_gmail_com", (string? x, string? y) =>
 
 });
 
+app.MapGet("/health", () => "healthy");
 app.Run();
 
 static bool IsValidNumber(string value)
